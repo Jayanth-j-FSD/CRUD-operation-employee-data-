@@ -1,0 +1,205 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  letter-spacing: 0.5px;
+  font-size: large;
+  border-right: 0.5px dotted #055c4a;
+}
+
+.headingTag {
+  display: flex;
+  color: #0c5e09c9;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%; 
+}
+form {
+  padding: 12px;
+
+  box-sizing: border-box;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 32px;
+  color: #ffffffec;
+  border-radius: 35px;
+  border-bottom: 1px solid #c3d80b;
+  text-align: left;
+  background-color: #65bbaace;
+}
+form input {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: #009879;
+  text-align: left;
+  background-color: #f3f3f3;
+}
+
+.modal {
+  padding: 2px;
+  position: relative;
+  top: 25%;
+  left: 23%;
+  min-width: 400px;
+  max-width: 400px;
+  border: none;
+  background-color: rgb(245, 245, 245);
+  border-radius: 35px;
+  box-shadow: rgba(41, 51, 49, 0.637) 0px 5px 15px;
+}
+.modal:hover {
+  transform: scale(1.0012);
+}
+
+table {
+  border-collapse: collapse;
+  margin: 40px auto;
+  font-size: 0.9cm;
+  border-radius: 5px;
+  min-width: 500px;
+  width: calc(100% - 50px);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+tbody tr {
+  border-bottom: 1px solid #dddddd;
+  border-right: 1px dotted #dddddd;
+}
+tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+th {
+  text-align: left;
+  color: #ffffff;
+  border-bottom: 2px solid #095849;
+  padding: 10px;
+  padding-right: 12px;
+  color: #ffffff;
+  background-color: #009879;
+}
+
+td {
+  text-align: left;
+  padding: 12px 8px;
+  border-right: 0.2px dotted #ebebeb;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+  color: #0e8f7ebe;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5% 2%;
+  box-sizing: border-box;
+  border-bottom: 2px solid #009879;
+  background-color: #f7f7f7;
+}
+
+.navbar > svg {
+  font-size: 24px;
+  margin: 0 10px;
+  color: #009879;
+}
+
+.navbar:nth-child(odd) {
+  background-color: #d3f3ec;
+  border-right: 0.5px dotted #055c4a;
+}
+
+.navbar:nth-child(even) {
+  background-color: #a5e7dc;
+}
+
+.enrollButton {
+  display: flex;
+  margin-left: 25px;
+  padding: 1%;
+  border-radius: 12px;
+  border-radius: 6px;
+  color: rgba(229, 255, 0, 0.822);
+  background-color: rgb(98, 183, 202);
+  transition: 0.2s;
+  text-align: center;
+  font-size: 36px;
+  box-shadow: rgba(110, 116, 115, 0.637) 0px 5px 15px;
+  font-weight: bold;
+}
+.closeButton {
+  margin-top: 12px;
+  color: #ebebeb;
+}
+.editButton,
+.deleteButton {
+  margin-bottom: 3px;
+}
+.editButton,
+.closeButton,
+.deleteButton,
+.submitButton,
+.onConfirmButton,
+.onCancelButton {
+  padding: 4%;
+  background-color: rgb(98, 183, 202);
+  font-size: 30px;
+  color: rgba(229, 255, 0, 0.884);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  box-shadow: rgba(110, 116, 115, 0.637) 0px 5px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+.onConfirmButton {
+  color: white;
+}
+.editButton:hover,
+.closeButton:hover,
+.deleteButton:hover,
+.submitButton:hover,
+.enrollButton:hover,
+.onConfirmButton:hover,
+.onCancelButton:hover {
+  background-color: #5aafbf;
+  color: #fff;
+  transform: scale(1.05);
+}
+.onConfirmButton:hover {
+  color: rgb(127, 250, 127);
+}
+.onCancelButton:hover,
+.closeButton:hover,
+.deleteButton:hover {
+  background-color: red;
+}
+
+.confirmation-dialog {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #cdeededa;
+  border: 1px solid #ddd;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.dialog-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.confirmation-dialog button {
+  margin-top: 10px;
+  padding: 5px 10px;
+}
+.tableButtons,
+.confirmationButtonsDiv {
+  display: flex;
+  justify-content: space-between;
+}
+
